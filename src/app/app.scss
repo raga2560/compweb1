@@ -57,6 +57,7 @@
   ion-header {
     background: transparent !important;
     background-color: transparent !important;
+    background-image: url('../assets/img/misc/material-design-background.jpg');
   }
   .header-md::after,
   .toolbar-background-ios {
@@ -69,6 +70,9 @@
   }
   // ---
 }
+.toolbar-background {
+    background-image: url('../assets/img/misc/material-design-background.jpg');
+  }
 
 // right side menu
 #menu-right {

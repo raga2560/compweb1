@@ -10,20 +10,20 @@ export class ConcertCardPage {
 
   concerts = [
     {
-      name: 'yeezy world tour 2017',
-      artistName: 'Kanye West',
+      name: 'Bitcoin Training 2018',
+      artistName: 'Belavadi N Ramesh ',
       artistImage: 'assets/img/misc/kanye_west.png',
       color: '#f73e53'
     },
     {
-      name: 'yeezy world tour 2017',
-      artistName: 'Kanye West',
+      name: 'Bitcoin Workshop 2018',
+      artistName: 'Belavadi N Ramesh ',
       artistImage: 'assets/img/misc/kanye_west.png',
       color: '#0be3ff'
     },
     {
-      name: 'yeezy world tour 2017',
-      artistName: 'Kanye West',
+      name: 'Bitcoin Basics 2018',
+      artistName: 'Belavadi N Ramesh ',
       artistImage: 'assets/img/misc/kanye_west.png',
       color: '#fdd427'
     },
