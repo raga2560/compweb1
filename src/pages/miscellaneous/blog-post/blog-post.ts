@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController, IonicPage } from 'ionic-angular';
+import { BlogService } from './blog-service';
+
 
 @IonicPage()
 @Component({
@@ -8,6 +10,17 @@ import { NavController, IonicPage } from 'ionic-angular';
 })
 export class BlogPostPage {
 
-  constructor(public navCtrl: NavController) { }
+  posts: any;
+  constructor(public navCtrl: NavController, public blogService: BlogService) {
+  this.posts = '';
+  }
+
+ionViewDidLoad() {
+        this.blogService.getPosts().subscribe(posts  => {
+	console.log(posts);
+      this.posts = posts._body;
+    });
+
+  }
 
 }
