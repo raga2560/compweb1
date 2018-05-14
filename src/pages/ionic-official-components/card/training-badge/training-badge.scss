@@ -12,6 +12,7 @@ page-training-badge {
 .card img {
             width:  140vw !important;
             height: 100vw !important;
+            margin: 6px;
  }
 
 .post-description {
@@ -37,7 +38,7 @@ page-training-badge {
 
     @media (min-width: 640px) {
         .pins {
-            column-count: 4;
+            column-count: 2;
         }
         .item ion-avatar img {
             width:  5vw !important;
@@ -47,6 +48,7 @@ page-training-badge {
         .card img {
             width:  14vw !important;
             height: 10vw !important;
+            margin: 6px;
         }
     }
 
