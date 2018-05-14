@@ -35,6 +35,22 @@ export class HomePage {
   ];
   
 
+ cards = [
+    {
+    imageUrl: 'assets/img/home/current_state.png',
+      title: 'Current state of blockchain industry',
+      description: 'Bitcoin, Hyperledger, Ethereum, crypto currency, blockchain solutions report.',
+      albums: 9,
+      followers: '260k'
+    },
+    {
+      imageUrl: 'assets/img/home/company_offer.png',
+      title: 'Our solutions for  ',
+      description: 'Bitcoin, Hyperledger, Ethereum, crypto currency, blockchain solutions report.',
+      albums: 4,
+      followers: '120k'
+    },
+   ];
   constructor(public navCtrl: NavController) {
     this.rootPage = HomePage;
     this.items = [
@@ -63,6 +79,18 @@ export class HomePage {
 	 /*for (let i = 0; i < 20; i++) {
       this.slides.push(this.slides[i % 4]);
     } */
+  }
+
+  cardTapped(card) {
+    alert(card.title + ' was tapped.');
+  }
+
+  followersTapped(card) {
+    alert(card.title + ' followers tapped.');
+  }
+
+  albumsTapped(card) {
+    alert(card.title + ' albums tapped.');
   }
 
    onSlideChanged() {

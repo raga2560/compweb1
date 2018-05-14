@@ -8,14 +8,13 @@
 </ion-header>
 
 <ion-content padding>
- <h4>Offerings</h4>
-  <p>List of offers</p>
+ <h4>Current Offerings</h4>
 
   <accordion-list *ngFor="let item of items"
                   [title]="item.name"
                   textColor="#FFF"
                   hasMargin="false"
-                  headerColor="#F53D3D">
+                  headerColor="blue">
     <img [src]="item.imageUrl">
     <p text-wrap>{{item.description}}</p>
   </accordion-list>

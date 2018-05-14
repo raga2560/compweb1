@@ -51,18 +51,19 @@ loggedoutpages: Array<{ title: string, component: any, active: boolean, icon: st
 
     this.pages = [
       { title: 'Home', component: 'HomePage', active: true, icon: 'home' },
-	  { title: 'Profile', component: 'ProfileSettingsPage', active: false, icon: 'body' },
-	  { title: 'Login', component: 'LoginOnePage', active: false, icon: 'log-in' },
-	  { title: 'Blockchain', component: 'InsurancesPage', active: true, icon: 'contact' },
-	  { title: 'Innovation', component: 'InsurancesPage', active: true, icon: 'contact' },
-	  { title: 'Economics', component: 'InsurancesPage', active: true, icon: 'contact' },
+//	  { title: 'Profile', component: 'ProfileSettingsPage', active: false, icon: 'body' },
+//	  { title: 'Login', component: 'LoginOnePage', active: false, icon: 'log-in' },
+	  { title: 'Blockchain', component: 'BlockchainBadgePage', active: true, icon: 'contact' },
+	  { title: 'Innovation', component: 'InnovationBadgePage', active: true, icon: 'contact' },
+	  { title: 'Training', component: 'TrainingBadgePage', active: true, icon: 'contact' },
+//	  { title: 'Economics', component: 'InsurancesPage', active: true, icon: 'contact' },
 	  { title: 'Offering', component: 'AccordionListPage', active: true, icon: 'contact' },
-	  { title: 'Events', component: 'ConcertCardPage', active: true, icon: 'contact' },
-	  { title: 'Samples', component: 'FlashCardPage', active: true, icon: 'contact' },
-	  { title: 'Usecases', component: 'InsurancesPage', active: true, icon: 'contact' },
+//	  { title: 'Events', component: 'ConcertCardPage', active: true, icon: 'contact' },
+//	  { title: 'Samples', component: 'FlashCardPage', active: true, icon: 'contact' },
+//	  { title: 'Usecases', component: 'InsurancesPage', active: true, icon: 'contact' },
       { title: 'Contact', component: 'ProfileFivePage', active: true, icon: 'contact' },
      
-      { title: 'Logout',   component: 'HomePage', active: false, icon: 'ionic', logsOut: true },
+//      { title: 'Logout',   component: 'HomePage', active: false, icon: 'ionic', logsOut: true },
       
       
     ];

@@ -1,21 +1,10 @@
 <ion-header>
   <ion-navbar>
-    <button ion-button menuToggle>
-      <ion-icon name="menu"></ion-icon>
-    </button>
-    <ion-title>Belavadi Technology Solutions Private Limited </ion-title>
+    <ion-title>Blockchain solution packages </ion-title>
   </ion-navbar>
 </ion-header>
 <ion-content>
- <ion-slides #slider pager autoplay="2000" (ionSlideDidChange)="onSlideChanged()" dir="rtl" >
-    <ion-slide *ngFor="let slide of slides"
-               [ngStyle]="{'background' : 'url(' + slide.imageUrl + ')'}">
-      <h2>{{slide.title}}</h2>
-    </ion-slide>
-  
-  </ion-slides>
-  
- <div class="pins">
+  <div class="pins">
   <ion-card *ngFor="let card of cards" class="pin">
     <img [src]="card.imageUrl" (click)="cardTapped(card)" />
     <ion-card-content>
@@ -28,18 +17,17 @@
     </ion-card-content>
     <ion-item (click)="albumsTapped(card)">
       <ion-icon name='download' item-start class="albums-icon"></ion-icon>
-      White paper
+      Specification 
       <ion-badge item-end>{{card.albums}}</ion-badge>
     </ion-item>
-    <!--ion-item (click)="followersTapped(card)">
-      Subscribe
+    <ion-item (click)="followersTapped(card)">
+      <ion-icon name='unknwon' item-start class="albums-icon"></ion-icon>
+      Subscription
     <button ion-button outline item-end icon-left>
       <ion-icon name="star"></ion-icon>
       Buy
     </button>
-    </ion-item -->
+    </ion-item>
   </ion-card>
   </div>
-
 </ion-content>
-
