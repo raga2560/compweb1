@@ -9,7 +9,7 @@ import { NavController, IonicPage } from 'ionic-angular';
 export class CardBadgePage {
   cards = [
     {
-      imageUrl: 'assets/img/card/bjork-live.jpg',
+      imageUrl: 'assets/img/training/Bitcoin-prog.png',
       title: 'Björk',
       description: 'Björk first came to prominence as one of the lead vocalists of the avant pop Icelandic sextet the Sugarcubes.',
       albums: 9,

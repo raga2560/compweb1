@@ -1,28 +1,28 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>Card with Badges</ion-title>
+    <ion-title>Training  </ion-title>
   </ion-navbar>
 </ion-header>
 <ion-content>
   <div class="pins">
-  <ion-card *ngFor="let card of cards" class="pin">
+  <ion-card *ngFor="let card of cards" >
     <img [src]="card.imageUrl" (click)="cardTapped(card)" />
     <ion-card-content>
       <h2 class="card-title">
         {{card.title}}
       </h2>
-      <div class="post-description">
+      <p>
         {{card.description}}
-      </div>
+      </p>
     </ion-card-content>
     <ion-item (click)="albumsTapped(card)">
       <ion-icon name='download' item-start class="albums-icon"></ion-icon>
-      Whitepaper
+      Contents
       <ion-badge item-end>{{card.albums}}</ion-badge>
     </ion-item>
     <ion-item (click)="followersTapped(card)">
       <ion-icon name='code-download' item-start class="albums-icon"></ion-icon>
-      Prototype 
+      Subscribe 
     <button ion-button outline item-end icon-left>
       <ion-icon name="star"></ion-icon>
       Buy
